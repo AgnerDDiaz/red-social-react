@@ -25,7 +25,7 @@ export default function SignInSide() {
     event.preventDefault();
 
     try {
-      const response = await axios.get('http://localhost:44350/usuario/2', {
+      const response = await axios.get('http://localhost:44350/usuario', {
         params: {
           EMAIL: email,
           PASSWORD_USUARIO: password,

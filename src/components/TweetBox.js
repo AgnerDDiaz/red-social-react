@@ -38,7 +38,7 @@ function TweetBox() {
       formData.append('titulo', titulo);
       formData.append('comentario', comentario);
       formData.append('foto', foto);
-      formData.append('idPerfil', idPerfil);
+      formData.append('1', idPerfil);
 
       // Enviar la solicitud POST al backend
       await axios.post('http://localhost:3001/tweets', formData, {
