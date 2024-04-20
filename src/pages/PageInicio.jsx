@@ -2,6 +2,7 @@
 import React from "react";
 import Sidebar2 from "../components/Sidebar2";
 import TweetBox2 from "../components/TweetBox2";
+// import Feed from "../components/Feed";
 import Widgets from "../components/Widgets";
 import "../css/PageInicio.css"; // Asegúrate de importar tus estilos CSS aquí
 import Post from "../components/Post";
