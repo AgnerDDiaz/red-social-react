@@ -1,26 +1,26 @@
-import React, { useState } from 'react';
-import Button from '@mui/material/Button';
-import CssBaseline from '@mui/material/CssBaseline';
-import TextField from '@mui/material/TextField';
-import Link from '@mui/material/Link';
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import socialIcon from '../components/Logosinfondo.png';
-import axios from 'axios';
+import React, { useState } from "react";
+import Button from "@mui/material/Button";
+import CssBaseline from "@mui/material/CssBaseline";
+import TextField from "@mui/material/TextField";
+import Link from "@mui/material/Link";
+import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Container from "@mui/material/Container";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import socialIcon from "../components/Logosinfondo.png";
+import axios from "axios";
 
 const defaultTheme = createTheme();
 
 export default function SignUp() {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    password: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    password: "",
   });
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -30,7 +30,7 @@ export default function SignUp() {
     event.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:44350/usuario', {
+      const response = await axios.post("http://localhost:44350/usuario", {
         NOMBRE: formData.firstName,
         APELLIDO: formData.lastName,
         EMAIL: formData.email,
@@ -40,9 +40,11 @@ export default function SignUp() {
 
       console.log(response.data);
 
-      window.location.href = '/';
+      window.location.href = "/";
     } catch (error) {
-      setError('Ha ocurrido un error al registrar el usuario. Por favor, inténtalo de nuevo.');
+      setError(
+        "Ha ocurrido un error al registrar el usuario. Por favor, inténtalo de nuevo."
+      );
     }
   };
 
@@ -53,13 +55,17 @@ export default function SignUp() {
         <Box
           sx={{
             marginTop: 8,
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
           }}
         >
           <div className="icon-container">
-            <img src={socialIcon} alt="Ícono de RedSocial" className="social-icon" />
+            <img
+              src={socialIcon}
+              alt="Ícono de RedSocial"
+              className="social-icon"
+            />
             <Typography component="h2" variant="h4">
               EchoVerse
             </Typography>
@@ -67,7 +73,12 @@ export default function SignUp() {
           <Typography component="h1" variant="h5">
             Registrarse
           </Typography>
-          <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
+          <Box
+            component="form"
+            noValidate
+            onSubmit={handleSubmit}
+            sx={{ mt: 3 }}
+          >
             <Grid container spacing={2}>
               <Grid item xs={12} sm={6}>
                 <TextField
