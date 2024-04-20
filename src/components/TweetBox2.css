@@ -1,0 +1,107 @@
+
+
+.feed {
+    flex: 0.5;
+    border-right: 1px solid #e6ecf0;
+    min-width: fit-content;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .feed__header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid #e6ecf0;
+    padding: 15px 20px;
+  }
+  
+  .feed__header h2 {
+    font-size: 20px;
+  }
+  
+  .feed::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+
+.tweetbox__input img {
+    border-radius: 50%;
+    height: 40px;
+  }
+  
+  .tweetBox {
+    padding-bottom: 10px;
+    border-bottom: 6px solid #e6ecf0;
+    padding-right: 10px;
+  }
+  
+  .tweetBox form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tweetbox__input {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .tweetbox__input input {
+    flex: 1;
+    margin-left: 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+  }
+  
+  .tweetBox__tweetButton {
+    background-color: #50b7f5;
+    border: none;
+    color: white;
+    font-weight: 900;
+    border-radius: 30px;
+    width: 80px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: auto;
+  }
+
+  .tweetBox__tweetButton:hover{
+
+    background-color: #0070b1;
+    border-radius: 30px;
+    color: #e6ecf0;
+    transition: color 100ms ease-out;
+
+  }
+
+  .image-icon {
+    width: 20px; /* Ancho deseado */
+    height: 20px; /* Alto deseado */
+  }
+  
+  .flex-container {
+    display: flex;
+  }
+  
+  .image-upload-container {
+    margin-right: 360px; /* Espacio entre la imagen y el botón */
+    margin-left: 80px;
+  }
+  
+/* Agrega estos estilos a tu hoja de estilo */
+.image-preview {
+    margin-left: 10px; /* Espacio entre el botón y la previsualización */
+  }
+  
+  .image-preview img {
+    width: 50px; /* Ancho deseado */
+    height: 50px; /* Alto deseado */
+    border-color: 2px solid black;
+    border-radius: 10px;
+  }
+  
+  

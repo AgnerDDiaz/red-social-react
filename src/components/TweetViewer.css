@@ -1,0 +1,42 @@
+/* Estilos CSS */
+.container {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  height: 100vh; /* 100% del viewport height */
+}
+
+.tweet-box-container {
+  margin-top: 20px; /* Espacio entre los contenedores */
+}
+
+.tweet-box {
+  border-right: 2px solid #1da1f2;
+  border-left: 2px solid #1da1f2;
+  border-radius: 0px;
+  padding: 16px;
+  margin-bottom: 20px;
+  background-color: #000000;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 700px;
+}
+
+.tweet-box h2 {
+  margin-top: 0px;
+  margin-bottom: 16px;
+  font-size: 1.2rem;
+  color: #1da1f2;
+}
+
+.tweet {
+  border-bottom: 2px solid #1da1f2; /* Separador entre tweets */
+  padding-bottom: 10px; /* Espacio entre tweets */
+}
+
+.tweet-content {
+  color: #fff;
+}
+
+.tweet-content p {
+  margin: 0; /* Eliminar el margen del párrafo dentro del tweet */
+}

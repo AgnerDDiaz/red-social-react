@@ -1,0 +1,110 @@
+.tweet-box-container {
+    justify-content: center; /* Centra horizontalmente */
+  }
+  
+
+.tweet-box {
+    border-right: 2px solid #1da1f2;
+    border-left: 2px solid #1da1f2;
+    border-top: 2px solid #1da1f2;
+    border-radius: 0px;
+    padding: 16px;
+    margin-bottom: 20px;
+    background-color: #000000;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    
+  }
+  
+  .tweet-box h2 {
+    margin-top: 0px;
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+    color: #1da1f2;
+  }
+  
+  .tweet-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tweet-box form div {
+    margin-bottom: 12px;
+    color: #1da1f2;
+
+  }
+  
+  .tweet-box label {
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  
+  .tweet-box input[type="text"],
+  .tweet-box input[type="file"] {
+    width: 95%;
+    padding: 8px;
+    font-size: 1rem;
+    background-color: #000000;
+    justify-content: center;
+    margin-bottom: 5px;
+    display: flex;
+    color: #fff;
+
+  }
+
+.tweet-box textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    background-color: #000000;
+    color: #fff;
+    margin-bottom: 5px;
+    max-height: 120px; /* Establecer la altura máxima */
+    min-height: 120px; /* Establecer la altura máxima */
+    max-width: 675px; /* Establecer la altura máxima */
+    min-width: 675px;
+    overflow-y: auto; /* Habilitar el desplazamiento vertical si el contenido excede la altura máxima */
+  }
+  
+  
+  .tweet-box button {
+    padding: 8px;
+    width: 90px;
+    background-color: #1da1f2;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .tweet-box button:hover {
+    background-color: #0c84b9;
+  }
+
+  
+.image-icon {
+    width: 30px; /* Ancho deseado */
+    height: 30px; /* Alto deseado */
+  }
+  
+.flex-container {
+    display: flex;
+  }
+  
+.image-upload-container {
+    margin-right: 550px; /* Espacio entre la imagen y el botón */
+  }
+  
+/* Agrega estos estilos a tu hoja de estilo */
+.image-preview {
+    margin-left: 10px; /* Espacio entre el botón y la previsualización */
+  }
+  
+.image-preview img {
+    width: 50px; /* Ancho deseado */
+    height: 50px; /* Alto deseado */
+  }
+  
+  
+  

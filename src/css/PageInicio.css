@@ -1,0 +1,28 @@
+
+.app {
+  display: flex;
+  height: 100vh;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+/* Estilos CSS */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribuye los elementos horizontalmente */
+  align-items: flex-start; /* Alinea los elementos en la parte superior */
+}
+
+.post-container {
+  flex-grow: 1; /* Permite que el contenedor de posts ocupe el espacio restante */
+  margin-right: 20px; /* Añade un margen derecho para separar los posts de los widgets */
+}
+
+.tweet-box-container,
+.widgets-container {
+  width: 300px; /* Establece un ancho fijo para los contenedores del tweetbox y los widgets */
+}
+

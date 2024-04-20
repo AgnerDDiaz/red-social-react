@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidebarOption {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebarOption .material-icons,
+.fa-twitter {
+  padding: 20px;
+}
+
+.sidebarOption h2 {
+  font-weight: 800;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.sidebarOption:hover {
+  background-color: #e6ecf0;
+  border-radius: 30px;
+  color: #50b7f5;
+  transition: color 100ms ease-out;
+}
+
+.sidebarOption.active {
+  color: #e6ecf0;
+}
+
+
+.sidebarOption2 {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: #50b7f5;
+  color:#e6ecf0;
+  border-radius: 30px;
+}
+
+.sidebarOption2 .material-icons2 {
+  padding: 20px;
+
+}
+
+.sidebarOption2 h2 {
+  font-weight: 900;
+  font-size: 20px;
+  margin-right: 20px;
+  color: #e6ecf0;
+  text-align: center;
+}
+
+.sidebarOption2:hover {
+  background-color: #0070b1;
+  border-radius: 30px;
+  color: #e6ecf0;
+  transition: color 100ms ease-out;
+}
+
+.sidebarOption2.active {
+  color: #e6ecf0;
+  background-color: #50b7f5;
+}
+
+
+.sidebar {
+  border-right: 1px solid #e6ecf0;
+  flex: 0.2;
+
+  min-width: 250px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.fa-twitter {
+  color: #50b7f5;
+  font-size: 30px;
+}
+
+.icon-container {
+  text-align: center; /* Centrar horizontalmente */
+  margin-bottom: 20px; /* Espacio inferior */
+  
+}
+
+.social-icon {
+  width: 100px; /* Ancho deseado */
+  height: 100px; /* Alto deseado */
+}
+
+/* Estilos CSS */
+.link-no-underline {
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit; /* Utiliza el color heredado del padre */
+}
